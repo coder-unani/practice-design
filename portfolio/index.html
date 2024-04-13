@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./styles.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       as="style"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
-    />
+    /> -->
+    <link rel="stylesheet" href="https://use.typekit.net/key0jng.css" />
   </head>
   <body>
     <div class="body_wrap">
@@ -39,119 +40,308 @@
       </header>
       <!-- main -->
       <main>
-        <div class="nav_wrap">
-          <nav class="menu">
-            <ul>
-              <li>
-                <img
-                  src="./images/icon_nav_file.svg"
-                  class="active"
-                  alt="file_icon"
-                />
-              </li>
-              <li>
-                <img src="./images/icon_nav_search.svg" alt="search_icon" />
-              </li>
-              <li>
-                <img src="./images/icon_nav_git.svg" alt="git_icon" />
-              </li>
-            </ul>
-          </nav>
-          <nav class="toggle_menu">
-            <ul class="menu_item">
-              <li class="arrow"></li>
-              <li class="text first">탐색기</li>
-            </ul>
-            <ul class="menu_item">
-              <li class="arrow">
-                <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
-              </li>
-              <li class="icon">
-                <img src="./images/icon_folder.svg" alt="folder_icon" />
-              </li>
-              <li class="text">coder.unani</li>
-            </ul>
-            <ul class="menu_list index">
-              <li>
+        <nav class="menu">
+          <ul>
+            <li>
+              <img
+                src="./images/icon_nav_file.svg"
+                class="active"
+                alt="file_icon"
+              />
+            </li>
+            <li>
+              <img src="./images/icon_nav_search.svg" alt="search_icon" />
+            </li>
+            <li>
+              <img src="./images/icon_nav_git.svg" alt="git_icon" />
+            </li>
+          </ul>
+        </nav>
+        <nav class="toggle_menu">
+          <div class="name">
+            <div class="arrow"></div>
+            <div class="text">EXPLORER</div>
+          </div>
+          <ul class="menu">
+            <li>
+              <div class="name">
+                <div class="arrow">
+                  <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
+                </div>
                 <div class="icon">
                   <img src="./images/icon_folder.svg" alt="folder_icon" />
                 </div>
-                <div class="text">index.html</div>
-              </li>
-            </ul>
-            <!-- <ul class="menu_list">
-              <li>
-                <div class="title">
-                  <div class="arrow">
-                    <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
+                <div class="text">CODER.UNANI</div>
+              </div>
+              <ul class="list">
+                <li>
+                  <div class="name">
+                    <div class="arrow">
+                      <img
+                        src="./images/icon_arrow_down.svg"
+                        alt="arrow_down"
+                      />
+                    </div>
+                    <div class="icon index">
+                      <img src="./images/icon_folder.svg" alt="folder_icon" />
+                    </div>
+                    <div class="text">index</div>
                   </div>
-                  <div class="icon">
-                    <img src="./images/icon_folder.svg" alt="folder_icon" />
+                  <ul class="list">
+                    <li>
+                      <div class="name">
+                        <div class="icon">🚀</div>
+                        <div class="text">hello world!</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="name">
+                        <div class="icon">🙋🏻‍♂️</div>
+                        <div class="text">introduce</div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="name">
+                    <div class="arrow">
+                      <img
+                        src="./images/icon_arrow_down.svg"
+                        alt="arrow_down"
+                      />
+                    </div>
+                    <div class="icon skills">
+                      <img src="./images/icon_folder.svg" alt="folder_icon" />
+                    </div>
+                    <div class="text">skills</div>
                   </div>
-                  <div class="text">index</div>
-                </div>
-                <ul class="list">
-                  <li>hello world!</li>
-                  <li>introduce</li>
-                  <li>skills.html</li>
-                  <li>projects.html</li>
-                  <li>contact.html</li>
-                </ul>
-              </li>
-              <li>
-                <div class="title">
-                  <div class="arrow">
-                    <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
+                  <ul class="list">
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_code_yellow.svg"
+                            alt="front-end icon"
+                          />
+                        </div>
+                        <div class="text">front-end</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_code_blue.svg"
+                            alt="front-end icon"
+                          />
+                        </div>
+                        <div class="text">back-end</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_code_teal.svg"
+                            alt="front-end icon"
+                          />
+                        </div>
+                        <div class="text">databases</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_code_yellow.svg"
+                            alt="front-end icon"
+                          />
+                        </div>
+                        <div class="text">etc</div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="name">
+                    <div class="arrow">
+                      <img
+                        src="./images/icon_arrow_down.svg"
+                        alt="arrow_down"
+                      />
+                    </div>
+                    <div class="icon projects">
+                      <img src="./images/icon_folder.svg" alt="folder_icon" />
+                    </div>
+                    <div class="text">projects</div>
                   </div>
-                  <div class="icon">
-                    <img src="./images/icon_folder.svg" alt="folder_icon" />
+                  <ul class="list">
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_check_blue.svg"
+                            alt="project icon"
+                          />
+                        </div>
+                        <div class="text">..........</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_check_blue.svg"
+                            alt="project icon"
+                          />
+                        </div>
+                        <div class="text">..........</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_check_blue.svg"
+                            alt="project icon"
+                          />
+                        </div>
+                        <div class="text">..........</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_check_blue.svg"
+                            alt="project icon"
+                          />
+                        </div>
+                        <div class="text">..........</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_check_blue.svg"
+                            alt="project icon"
+                          />
+                        </div>
+                        <div class="text">..........</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_check_blue.svg"
+                            alt="project icon"
+                          />
+                        </div>
+                        <div class="text">..........</div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="name">
+                    <div class="arrow">
+                      <img
+                        src="./images/icon_arrow_down.svg"
+                        alt="arrow_down"
+                      />
+                    </div>
+                    <div class="icon contact">
+                      <img src="./images/icon_folder.svg" alt="folder_icon" />
+                    </div>
+                    <div class="text">contact</div>
                   </div>
-                  <div class="text">skill</div>
-                </div>
-                <ul class="list">
-                  <li>front-end</li>
-                  <li>back-end</li>
-                  <li>database</li>
-                  <li>etc</li>
-                </ul>
-              </li>
-              <li>
-                <div class="title">
-                  <div class="arrow">
-                    <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
-                  </div>
-                  <div class="icon">
-                    <img src="./images/icon_folder.svg" alt="folder_icon" />
-                  </div>
-                  <div class="text">work</div>
-                </div>
-                <ul class="list">
-                  <li>index.html</li>
-                  <li>about.html</li>
-                  <li>skills.html</li>
-                  <li>projects.html</li>
-                  <li>contact.html</li>
-                </ul>
-              </li>
-              <li>
-                <div class="title">
-                  <div class="arrow">
-                    <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
-                  </div>
-                  <div class="text">contact</div>
-                </div>
-                <ul class="list">
-                  <li>front-end</li>
-                  <li>back-end</li>
-                  <li>database</li>
-                  <li>etc</li>
-                </ul>
-              </li>
-            </ul> -->
-          </nav>
-        </div>
+                  <ul class="list">
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img src="./images/icon_email.svg" alt="email_icon" />
+                        </div>
+                        <div class="text">email</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_github.svg"
+                            alt="github_icon"
+                          />
+                        </div>
+                        <div class="text">github</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="name">
+                        <div class="icon">
+                          <img
+                            src="./images/icon_linkedin.svg"
+                            alt="linkedin_icon"
+                          />
+                        </div>
+                        <div class="text">linkedin</div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
         <div class="content_wrap">
-          <section class="text_editor">react.js<br /></section>
+          <ul class="tap">
+            <li class="active">
+              <div class="text">index</div>
+              <div class="close">
+                <img src="./images/icon_xmark_solid.svg" alt="close_icon" />
+              </div>
+            </li>
+            <li>
+              <div class="text">skills</div>
+              <div class="close">
+                <img src="./images/icon_xmark_solid.svg" alt="close_icon" />
+              </div>
+            </li>
+            <li>
+              <div class="text">projects</div>
+              <div class="close">
+                <img src="./images/icon_xmark_solid.svg" alt="close_icon" />
+              </div>
+            </li>
+            <li>
+              <div class="text">contact</div>
+              <div class="close">
+                <img src="./images/icon_xmark_solid.svg" alt="close_icon" />
+              </div>
+            </li>
+            <li></li>
+          </ul>
+          <section class="content">
+            <div class="navigator">portfolio > index</div>
+            <div class="editor">
+              <div class="line_number">
+                <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+                  <li>6</li>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                  <li>10</li>
+                </ul>
+              </div>
+              <div class="text"></div>
+            </div>
+          </section>
           <section class="terminal">
             <div class="nav">
               <ul>
