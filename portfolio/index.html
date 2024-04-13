@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
+    />
+  </head>
+  <body>
+    <div class="body_wrap">
+      <!-- header -->
+      <header>
+        <ul class="circle_wrap">
+          <li class="circle red"></li>
+          <li class="circle yellow"></li>
+          <li class="circle green"></li>
+        </ul>
+        <div class="search_wrap">
+          <input type="text" class="search" placeholder="Search..." />
+        </div>
+        <div class="sidebar_wrap">
+          <ul>
+            <li>
+              <img src="./images/icon_sidebar_left.svg" alt="sidebar_icon" />
+            </li>
+            <li>
+              <img src="./images/icon_sidebar_bottom.svg" alt="sidebar_icon" />
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- main -->
+      <main>
+        <div class="nav_wrap">
+          <nav class="menu">
+            <ul>
+              <li>
+                <img
+                  src="./images/icon_nav_file.svg"
+                  class="active"
+                  alt="file_icon"
+                />
+              </li>
+              <li>
+                <img src="./images/icon_nav_search.svg" alt="search_icon" />
+              </li>
+              <li>
+                <img src="./images/icon_nav_git.svg" alt="git_icon" />
+              </li>
+            </ul>
+          </nav>
+          <nav class="toggle_menu">
+            <ul class="menu_item">
+              <li class="arrow"></li>
+              <li class="text first">탐색기</li>
+            </ul>
+            <ul class="menu_item">
+              <li class="arrow">
+                <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
+              </li>
+              <li class="icon">
+                <img src="./images/icon_folder.svg" alt="folder_icon" />
+              </li>
+              <li class="text">coder.unani</li>
+            </ul>
+            <ul class="menu_list index">
+              <li>
+                <div class="icon">
+                  <img src="./images/icon_folder.svg" alt="folder_icon" />
+                </div>
+                <div class="text">index.html</div>
+              </li>
+            </ul>
+            <!-- <ul class="menu_list">
+              <li>
+                <div class="title">
+                  <div class="arrow">
+                    <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/icon_folder.svg" alt="folder_icon" />
+                  </div>
+                  <div class="text">index</div>
+                </div>
+                <ul class="list">
+                  <li>hello world!</li>
+                  <li>introduce</li>
+                  <li>skills.html</li>
+                  <li>projects.html</li>
+                  <li>contact.html</li>
+                </ul>
+              </li>
+              <li>
+                <div class="title">
+                  <div class="arrow">
+                    <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/icon_folder.svg" alt="folder_icon" />
+                  </div>
+                  <div class="text">skill</div>
+                </div>
+                <ul class="list">
+                  <li>front-end</li>
+                  <li>back-end</li>
+                  <li>database</li>
+                  <li>etc</li>
+                </ul>
+              </li>
+              <li>
+                <div class="title">
+                  <div class="arrow">
+                    <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/icon_folder.svg" alt="folder_icon" />
+                  </div>
+                  <div class="text">work</div>
+                </div>
+                <ul class="list">
+                  <li>index.html</li>
+                  <li>about.html</li>
+                  <li>skills.html</li>
+                  <li>projects.html</li>
+                  <li>contact.html</li>
+                </ul>
+              </li>
+              <li>
+                <div class="title">
+                  <div class="arrow">
+                    <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
+                  </div>
+                  <div class="text">contact</div>
+                </div>
+                <ul class="list">
+                  <li>front-end</li>
+                  <li>back-end</li>
+                  <li>database</li>
+                  <li>etc</li>
+                </ul>
+              </li>
+            </ul> -->
+          </nav>
+        </div>
+        <div class="content_wrap">
+          <section class="text_editor">react.js<br /></section>
+          <section class="terminal">
+            <div class="nav">
+              <ul>
+                <li class="active"><span>Terminal</span></li>
+              </ul>
+            </div>
+            <div class="output">
+              <ul>
+                <li>
+                  <span class="prompt">~/</span>
+                  <span class="arrow">></span>
+                  <input type="text" value="" />
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer>
+        <p>© 2024. UNANI All right reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

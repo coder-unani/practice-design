@@ -1,0 +1,361 @@
+:root {
+  --color-white: #ffffff;
+  /* active : d7d7d7 */
+  --color-lightgray: #868686;
+  --color-gray: #434343;
+  --color-deepgray: #1f1f1f;
+  --color-lightblack: #181818;
+  --color-blue: #4776d0;
+
+  --color-default-bg: var(--color-deepgray);
+  --color-default-text: var(--color-white);
+  --color-default-highlight: var(--color-blue);
+  --color-app-bg: var(--color-lightblack);
+  --color-app-border: var(--color-gray);
+  --color-app-menu-icon: var(--color-lightgray);
+}
+.body_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  color: var(--color-default-text);
+  background-color: var(--color-default-bg);
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+header {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--color-app-bg);
+  border: 1px solid var(--color-app-border);
+}
+
+main {
+  flex: 47;
+  display: flex;
+  flex-direction: row;
+}
+
+/* header */
+.circle_wrap {
+  display: flex;
+  flex: 1;
+  min-width: 80px;
+  justify-content: left;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.search_wrap {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_wrap input {
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  color: var(--color-default-text);
+  background-color: var(--color-default-bg);
+  border: 1px solid var(--color-app-border);
+}
+
+.search_wrap input:focus {
+  outline: none;
+}
+
+.sidebar_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.sidebar_wrap ul {
+  display: flex;
+  flex-direction: row;
+  padding-right: 15px;
+}
+
+.sidebar_wrap ul li img {
+  width: 32px;
+  filter: invert(55%) sepia(16%) saturate(0%) hue-rotate(152deg) brightness(93%)
+    contrast(89%);
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-left: 7px;
+}
+
+.circle.red {
+  background-color: #db6e5d;
+}
+
+.circle.yellow {
+  background-color: #eac045;
+}
+
+.circle.green {
+  background-color: #7dc34d;
+}
+
+/* nav */
+.nav_wrap {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-app-bg);
+  border-left: 1px solid var(--color-app-border);
+  border-right: 1px solid var(--color-app-border);
+}
+
+nav.menu {
+  min-width: 80px;
+}
+
+nav.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.menu ul li {
+  padding: 15px;
+}
+
+nav.menu ul li img {
+  width: 32px;
+  filter: invert(55%) sepia(16%) saturate(0%) hue-rotate(152deg) brightness(93%)
+    contrast(89%);
+}
+
+nav.menu ul li img.active {
+  filter: invert(100%) sepia(8%) saturate(204%) hue-rotate(292deg)
+    brightness(84%) contrast(101%);
+}
+
+nav.toggle_menu {
+  min-width: 12rem;
+  font-size: 1rem;
+  padding: 2px;
+  border-left: 1px solid var(--color-app-border);
+}
+
+nav.toggle_menu .menu_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 30px;
+}
+
+nav.toggle_menu .menu_item .arrow {
+  width: 16px;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+nav.toggle_menu .menu_item .arrow img {
+  width: 12px;
+  filter: invert(100%) sepia(8%) saturate(204%) hue-rotate(292deg)
+    brightness(84%) contrast(101%);
+}
+
+nav.toggle_menu .menu_item .icon {
+  width: 20px;
+  padding-left: 2px;
+  padding-top: 3px;
+}
+
+nav.toggle_menu .menu_item .icon img {
+  width: 16px;
+  filter: invert(67%) sepia(10%) saturate(355%) hue-rotate(165deg)
+    brightness(95%) contrast(87%);
+}
+
+nav.toggle_menu .menu_item .text {
+  flex: 1 0 auto;
+  text-align: left;
+  padding-left: 2px;
+}
+
+nav.toggle_menu .menu_item .text.first {
+  padding-left: 0;
+}
+
+nav.toggle_menu .menu_list {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 30px;
+}
+
+nav.toggle_menu .menu_list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+nav.toggle_menu .menu_list .icon {
+  width: 20px;
+  padding-left: 2px;
+  padding-top: 3px;
+}
+
+nav.toggle_menu .menu_list .icon img {
+  width: 16px;
+}
+
+/* nav.toggle_menu .title {
+  width: 100%;
+  height: 30px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+nav.toggle_menu .title div {
+  height: 30px;
+}
+
+nav.toggle_menu .title .arrow {
+  display: inline-block;
+  width: 12px;
+}
+
+nav.toggle_menu .title .arrow img {
+  width: 100%;
+  filter: invert(100%) sepia(8%) saturate(204%) hue-rotate(292deg)
+    brightness(84%) contrast(101%);
+}
+
+nav.toggle_menu .title .icon {
+  display: inline-block;
+  width: 16px;
+}
+
+nav.toggle_menu .title .icon img {
+  width: 100%;
+  filter: invert(67%) sepia(10%) saturate(355%) hue-rotate(165deg)
+    brightness(95%) contrast(87%);
+}
+
+nav.toggle_menu .title .text {
+  display: inline-block;
+  padding-left: 5px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+nav.toggle_menu ul {
+  margin-left: 30px;
+}
+
+nav.toggle_menu ul li {
+  padding: 7px 0;
+}
+
+nav.toggle_menu ul li:first-child {
+  padding: 0;
+}
+
+nav.toggle_menu ul li a {
+  padding: 7px 0;
+} */
+
+/* content */
+.content_wrap {
+  flex: 13;
+  display: flex;
+  flex-direction: column;
+}
+
+.text_editor {
+  flex: 3;
+}
+
+.terminal {
+  flex: 1;
+  background-color: var(--color-app-bg);
+  border-top: 1px solid var(--color-app-border);
+}
+
+.terminal .nav {
+  height: 30px;
+  padding: 15px;
+  color: var(--color-default-text);
+}
+
+.terminal .nav ul li span {
+  padding: 5px 0;
+}
+
+.terminal .nav ul li.active span {
+  border-bottom: 1px solid var(--color-default-highlight);
+}
+
+.terminal .output {
+  padding: 15px;
+}
+
+.terminal .output .prompt {
+  color: var(--color-default-highlight);
+}
+
+.terminal .output .arrow {
+  color: var(--color-app-menu-icon);
+}
+
+.terminal .output input {
+  background-color: var(--color-app-bg);
+  border: 0;
+  color: var(--color-default-text);
+}
+
+.terminal .output input:focus {
+  outline: none;
+}
+
+/* footer */
+footer {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-app-bg);
+  border: 1px solid var(--color-app-border);
+}
+
+footer p {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  nav.toggle_menu {
+    display: none;
+  }
+
+  /* footer */
+  footer {
+    justify-content: center;
+  }
+
+  footer p {
+    margin-right: 0;
+  }
+}
