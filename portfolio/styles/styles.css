@@ -1,6 +1,5 @@
 :root {
   --color-white: #ffffff;
-  /* active : d7d7d7 */
   --color-lightgray: #868686;
   --color-gray: #434343;
   --color-deepgray: #1f1f1f;
@@ -14,6 +13,58 @@
   --color-app-border: var(--color-gray);
   --color-app-menu-icon: var(--color-lightgray);
   --color-app-text: var(--color-lightgray);
+
+  --color-default-bg: #333333;
+  --color-default-icon: #858585;
+  --color-default-highlight-icon: #ffffff;
+  --color-default-border: #474747;
+  --color-default-text: #ffffff;
+
+  --color-header-bg: #3c3c3c;
+  --color-header-icon: #cccccc;
+  --color-header-text: #cccccc;
+  --color-header-border: #3c3c3c;
+  --color-header-search-bg: #464646;
+  --color-header-search-icon: #cccccc;
+  --color-header-search-text: #cccccc;
+  --color-header-search-border: #616161;
+
+  --color-nav1-bg: #333333;
+  --color-nav1-icon: #858585;
+  --color-nav1-text: #ffffff;
+  --color-nav1-border: #333333;
+  --color-nav1-highlight-icon: #ffffff;
+
+  --color-nav2-bg: #252526;
+  --color-nav2-icon: #858585;
+  --color-nav2-text: #cccccc;
+  --color-nav2-border: #252526;
+  --color-nav2-highlight-bg: #37373d;
+  --color-nav2-highlight-text: #97c694;
+
+  --color-content-bg: #1e1e1e;
+  --color-content-text: #ffffff;
+  --color-content-border: #1e1e1e;
+
+  --color-editor-bg: #1e1e1e;
+  --color-editor-icon: #727272;
+  --color-editor-text: #858585;
+  --color-editor-border: #1e1e1e;
+  --color-editor-navi-bg: #1e1e1e;
+  --color-editor-navi-text: #a9a9a9;
+
+  --color-editor-tab-bg: #2d2d2d;
+  --color-editor-tab-icon: #414141;
+  --color-editor-tab-text: #626262;
+  --color-editor-tab-border: #252526;
+  --color-editor-tab-none-bg: #252526;
+  --color-editor-tab-highlight-bg: #1e1e1e;
+  --color-editor-tab-highlight-text: #97c694;
+  --color-editor-tab-highlight-border: #1e1e1e;
+
+  --color-terminal-bg: #1e1e1e;
+  --color-terminal-text: #ffffff;
+  --color-terminal-border: #414141;
 }
 .body_wrap {
   display: flex;
@@ -34,13 +85,13 @@
 
 /* header */
 header {
-  flex: 2;
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: var(--color-app-bg);
-  border-top: 1px solid var(--color-app-border);
-  border-bottom: 1px solid var(--color-app-border);
+  height: 35px;
+  background-color: var(--color-header-bg);
+  border-top: 1px solid var(--color-header-border);
+  border-bottom: 1px solid var(--color-header-border);
 }
 
 .circle_wrap {
@@ -64,9 +115,9 @@ header {
   padding: 5px;
   margin: 5px;
   width: 50%;
-  color: var(--color-default-text);
-  background-color: var(--color-default-bg);
-  border: 1px solid var(--color-app-border);
+  color: var(--color-header-search-text);
+  background-color: var(--color-header-search-bg);
+  border: 1px solid var(--color-header-search-border);
 }
 
 .search_wrap input:focus {
@@ -90,9 +141,9 @@ header {
   margin-right: 7px;
 }
 .sidebar_wrap ul li img {
-  width: 22px;
-  filter: invert(55%) sepia(16%) saturate(0%) hue-rotate(152deg) brightness(93%)
-    contrast(89%);
+  width: 16px;
+  filter: invert(94%) sepia(1%) saturate(1883%) hue-rotate(202deg)
+    brightness(115%) contrast(60%);
 }
 
 .circle {
@@ -125,8 +176,8 @@ main {
 /* nav */
 nav.menu {
   width: 50px;
-  background-color: var(--color-app-bg);
-  border-right: 1px solid var(--color-app-border);
+  background-color: var(--color-nav1-bg);
+  border-right: 1px solid var(--color-nav1-border);
 }
 
 nav.menu ul {
@@ -155,8 +206,8 @@ nav.menu ul li img.active {
 nav.toggle_menu {
   width: 200px;
   padding: 15px 0;
-  background-color: var(--color-app-bg);
-  border-right: 1px solid var(--color-app-border);
+  background-color: var(--color-nav2-bg);
+  border-right: 1px solid var(--color-nav2-border);
 }
 
 nav.toggle_menu .menu {
@@ -252,27 +303,24 @@ nav.toggle_menu .list li {
   height: 30px;
   padding: 2px 0 5px 0;
   text-align: center;
-  color: var(--color-default-text);
-  background-color: var(--color-app-bg);
-  border-right: 1px solid var(--color-app-border);
-  border-bottom: 1px solid var(--color-app-border);
+  color: var(--color-editor-tab-text);
+  background-color: var(--color-editor-tab-bg);
+  border-right: 1px solid var(--color-editor-tab-border);
+  border-bottom: 1px solid var(--color-editor-tab-border);
 }
 
 .content_wrap .tap li.active {
-  color: #d8c292;
-  background-color: var(--color-default-bg);
-  border-top: 1px solid var(--color-default-highlight);
+  color: var(--color-editor-tab-highlight-text);
+  background-color: var(--color-editor-tab-highlight-bg);
+  border-top: 1px solid var(--color-editor-tab-highlight-border);
   border-bottom: none;
-}
-
-.content_wrap .tap li.active .close {
-  display: block;
 }
 
 .content_wrap .tap li:last-child {
   flex: 1 0 auto;
   border-right: none;
-  border-bottom: 1px solid var(--color-app-border);
+  background-color: var(--color-editor-tab-none-bg);
+  border-bottom: 1px solid var(--color-editor-bg);
 }
 
 .content_wrap .tap li .text {
@@ -292,7 +340,18 @@ nav.toggle_menu .list li {
 }
 
 .content_wrap .tap li .close img {
-  width: 10px;
+  width: 16px;
+  filter: invert(71%) sepia(3%) saturate(4%) hue-rotate(354deg) brightness(84%)
+    contrast(84%);
+}
+
+.content_wrap .tap li.active .close {
+  display: block;
+}
+
+.content_wrap .tap li.active .close img {
+  filter: invert(100%) sepia(5%) saturate(20%) hue-rotate(161deg)
+    brightness(107%) contrast(105%);
 }
 
 .content_wrap .content {
@@ -302,19 +361,19 @@ nav.toggle_menu .list li {
   justify-content: top;
   align-items: left;
   font-size: 0.8rem;
+  background-color: var(--color-editor-bg);
 }
 
 .content_wrap .content .navigator {
   height: 20px;
   padding: 2px 15px;
-  color: var(--color-app-text);
-  box-shadow: gray 0px 25px 20px -20px gray;
-  /* box-shadow: 0 15px 10px -10px gray; */
+  color: var(--color-editor-text);
 }
 
 .content_wrap .content .editor {
   display: flex;
   flex-direction: row;
+  background-color: var(--color-editor-bg);
 }
 .content_wrap .content .editor .line_number {
   width: 30px;
@@ -333,8 +392,8 @@ nav.toggle_menu .list li {
 
 .terminal {
   flex: 1;
-  background-color: var(--color-app-bg);
-  border-top: 1px solid var(--color-app-border);
+  background-color: var(--color-terminal-bg);
+  border-top: 1px solid var(--color-terminal-border);
 }
 
 .terminal .nav {

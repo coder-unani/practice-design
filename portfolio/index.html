@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <!-- <link
       rel="stylesheet"
       as="style"
@@ -30,10 +30,13 @@
         <div class="sidebar_wrap">
           <ul>
             <li>
-              <img src="./images/icon_sidebar_left.svg" alt="sidebar_icon" />
+              <img src="./images/icon_layoutpanel.svg" alt="sidebar_icon" />
             </li>
             <li>
-              <img src="./images/icon_sidebar_bottom.svg" alt="sidebar_icon" />
+              <img
+                src="./images/icon_layoutsidebarleft.svg"
+                alt="sidebar_icon"
+              />
             </li>
           </ul>
         </div>
@@ -44,16 +47,19 @@
           <ul>
             <li>
               <img
-                src="./images/icon_nav_file.svg"
+                src="./images/icon_files.svg"
                 class="active"
                 alt="file_icon"
               />
             </li>
             <li>
-              <img src="./images/icon_nav_search.svg" alt="search_icon" />
+              <img src="./images/icon_search.svg" alt="search_icon" />
             </li>
             <li>
-              <img src="./images/icon_nav_git.svg" alt="git_icon" />
+              <img src="./images/icon_sourcecontrol.svg" alt="git_icon" />
+            </li>
+            <li>
+              <img src="./images/icon_extensions.svg" alt="git_icon" />
             </li>
           </ul>
         </nav>
@@ -67,9 +73,6 @@
               <div class="name">
                 <div class="arrow">
                   <img src="./images/icon_arrow_down.svg" alt="arrow_down" />
-                </div>
-                <div class="icon">
-                  <img src="./images/icon_folder.svg" alt="folder_icon" />
                 </div>
                 <div class="text">CODER.UNANI</div>
               </div>
@@ -299,25 +302,25 @@
             <li class="active">
               <div class="text">index</div>
               <div class="close">
-                <img src="./images/icon_xmark_solid.svg" alt="close_icon" />
+                <img src="./images/icon_close.svg" alt="close_icon" />
               </div>
             </li>
             <li>
               <div class="text">skills</div>
               <div class="close">
-                <img src="./images/icon_xmark_solid.svg" alt="close_icon" />
+                <img src="./images/icon_close.svg" alt="close_icon" />
               </div>
             </li>
             <li>
               <div class="text">projects</div>
               <div class="close">
-                <img src="./images/icon_xmark_solid.svg" alt="close_icon" />
+                <img src="./images/icon_close.svg" alt="close_icon" />
               </div>
             </li>
             <li>
               <div class="text">contact</div>
               <div class="close">
-                <img src="./images/icon_xmark_solid.svg" alt="close_icon" />
+                <img src="./images/icon_close.svg" alt="close_icon" />
               </div>
             </li>
             <li></li>
@@ -351,9 +354,17 @@
             <div class="output">
               <ul>
                 <li>
-                  <span class="prompt">~/</span>
+                  <span class="prompt">~/projects/coder-unani/</span>
                   <span class="arrow">></span>
-                  <input type="text" value="" />
+                  <input type="text" value="echo COPYRIGHT" />
+                </li>
+                <li>
+                  <span class="prompt">~/projects/coder-unani/</span>
+                  <span class="arrow">></span>
+                  <input
+                    type="text"
+                    value="© 2024. UNANI All right reserved."
+                  />
                 </li>
               </ul>
             </div>
