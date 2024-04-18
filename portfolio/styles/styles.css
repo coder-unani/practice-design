@@ -20,51 +20,59 @@
   --color-default-border: #474747;
   --color-default-text: #ffffff;
 
-  --color-header-bg: #3c3c3c;
+  /* --color-header-bg: #3c3c3c;
   --color-header-icon: #cccccc;
   --color-header-text: #cccccc;
   --color-header-border: #3c3c3c;
   --color-header-search-bg: #464646;
   --color-header-search-icon: #cccccc;
   --color-header-search-text: #cccccc;
+  --color-header-search-border: #616161; */
+  --color-header-bg: #212428;
+  --color-header-icon: #cccccc;
+  --color-header-text: #cccccc;
+  --color-header-border: #1a1d20;
+  --color-header-search-bg: #464646;
+  --color-header-search-icon: #cccccc;
+  --color-header-search-text: #cccccc;
   --color-header-search-border: #616161;
 
-  --color-nav1-bg: #333333;
-  --color-nav1-icon: #858585;
+  --color-nav1-bg: #26292e;
+  --color-nav1-icon: #6d737c;
   --color-nav1-text: #ffffff;
-  --color-nav1-border: #333333;
+  --color-nav1-border: #1a1d20;
   --color-nav1-highlight-icon: #ffffff;
 
-  --color-nav2-bg: #252526;
+  --color-nav2-bg: #212428;
   --color-nav2-icon: #858585;
   --color-nav2-text: #cccccc;
-  --color-nav2-border: #252526;
-  --color-nav2-highlight-bg: #37373d;
+  --color-nav2-border: #1a1d20;
+  --color-nav2-highlight-bg: #26292e;
   --color-nav2-highlight-text: #97c694;
 
   --color-content-bg: #1e1e1e;
   --color-content-text: #ffffff;
   --color-content-border: #1e1e1e;
 
-  --color-editor-bg: #1e1e1e;
+  --color-editor-bg: #26292e;
   --color-editor-icon: #727272;
   --color-editor-text: #858585;
   --color-editor-border: #1e1e1e;
   --color-editor-navi-bg: #1e1e1e;
   --color-editor-navi-text: #a9a9a9;
 
-  --color-editor-tab-bg: #2d2d2d;
+  --color-editor-tab-bg: #212428;
   --color-editor-tab-icon: #414141;
-  --color-editor-tab-text: #626262;
-  --color-editor-tab-border: #252526;
-  --color-editor-tab-none-bg: #252526;
-  --color-editor-tab-highlight-bg: #1e1e1e;
+  --color-editor-tab-text: #ffffff;
+  --color-editor-tab-border: #26292e;
+  --color-editor-tab-none-bg: #212428;
+  --color-editor-tab-highlight-bg: #26292e;
   --color-editor-tab-highlight-text: #97c694;
-  --color-editor-tab-highlight-border: #1e1e1e;
+  --color-editor-tab-highlight-border: #db8b70;
 
-  --color-terminal-bg: #1e1e1e;
+  --color-terminal-bg: #26292e;
   --color-terminal-text: #ffffff;
-  --color-terminal-border: #414141;
+  --color-terminal-border: #1a1d20;
 }
 .body_wrap {
   display: flex;
@@ -175,21 +183,24 @@ main {
 
 /* nav */
 nav.menu {
+  display: flex;
+  flex-direction: column;
   width: 50px;
   background-color: var(--color-nav1-bg);
   border-right: 1px solid var(--color-nav1-border);
 }
 
-nav.menu ul {
+nav.menu ul.list1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 5px;
+  margin-bottom: auto;
 }
 
 nav.menu ul li {
-  padding: 10px;
+  padding: 15px 10px;
 }
 
 nav.menu ul li img {
@@ -203,78 +214,59 @@ nav.menu ul li img.active {
     brightness(84%) contrast(101%);
 }
 
-nav.toggle_menu {
+.toggle_menu {
   width: 200px;
   padding: 15px 0;
   background-color: var(--color-nav2-bg);
   border-right: 1px solid var(--color-nav2-border);
 }
 
-nav.toggle_menu .menu {
+.toggle_menu .menu {
   margin-top: 15px;
 }
 
-nav.toggle_menu .name {
+.toggle_menu .name {
   display: flex;
 }
 
-nav.toggle_menu .name .arrow {
-  width: 14px;
-  padding-left: 5px;
-  /* padding-top: 3px; */
+.toggle_menu .name.explorer {
+  margin-bottom: 25px;
 }
 
-nav.toggle_menu .name .arrow img {
-  width: 9px;
+.toggle_menu .arrow {
+  width: 14px;
+}
+
+.toggle_menu .arrow img {
+  width: 100%;
   filter: invert(100%) sepia(8%) saturate(204%) hue-rotate(292deg)
     brightness(84%) contrast(101%);
 }
 
-nav.toggle_menu .name .icon {
-  width: 15px;
-  padding-left: 2px;
+.toggle_menu .icon {
+  width: 14px;
+  padding-top: 2px;
+  margin-right: 5px;
 }
 
-nav.toggle_menu .name .icon img {
-  width: 12px;
-  filter: invert(67%) sepia(10%) saturate(355%) hue-rotate(165deg)
-    brightness(95%) contrast(87%);
+.toggle_menu .icon img {
+  width: 100%;
 }
 
-nav.toggle_menu .name .icon.index img {
-  filter: invert(63%) sepia(55%) saturate(1075%) hue-rotate(188deg)
-    brightness(95%) contrast(100%);
-}
-
-nav.toggle_menu .name .icon.skills img {
-  filter: invert(36%) sepia(95%) saturate(463%) hue-rotate(333deg)
-    brightness(98%) contrast(85%);
-}
-
-nav.toggle_menu .name .icon.projects img {
-  filter: invert(58%) sepia(64%) saturate(377%) hue-rotate(52deg)
-    brightness(105%) contrast(91%);
-}
-
-nav.toggle_menu .name .icon.contact img {
-  filter: invert(96%) sepia(64%) saturate(3609%) hue-rotate(322deg)
-    brightness(98%) contrast(87%);
-}
-
-eac045 nav.toggle_menu .name .text {
+.toggle_menu .text {
   flex: 1 0 auto;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: left;
   padding-left: 2px;
 }
 
-nav.toggle_menu .list {
+.toggle_menu .list {
   width: 100%;
-  margin-left: 15px;
+  margin-left: 12px;
   margin-top: 5px;
 }
 
-nav.toggle_menu .list li {
+.toggle_menu .list li {
   padding: 5px 0;
 }
 
@@ -290,20 +282,18 @@ nav.toggle_menu .list li {
   flex-direction: row;
   justify-content: left;
   align-items: center;
+  font-size: 0.8rem;
+  color: var(--color-editor-tab-text);
 }
 
 .content_wrap .tap li {
   display: flex;
-  position: relative;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  font-size: 0.9rem;
   width: 150px;
-  height: 30px;
+  height: 28px;
   padding: 2px 0 5px 0;
-  text-align: center;
-  color: var(--color-editor-tab-text);
   background-color: var(--color-editor-tab-bg);
   border-right: 1px solid var(--color-editor-tab-border);
   border-bottom: 1px solid var(--color-editor-tab-border);
@@ -323,16 +313,15 @@ nav.toggle_menu .list li {
   border-bottom: 1px solid var(--color-editor-bg);
 }
 
-.content_wrap .tap li .text {
-  flex: 1 0 auto;
+.contact_wrap .tap .icon_file {
+  width: 14px;
+  height: 28%;
 }
 
-.content_wrap .tap li .close {
+.content_wrap .tap .icon_close {
   display: none;
-  position: absolute;
-  right: 0;
-  top: 11px;
-  padding: 0 7px;
+  width: 14px;
+  height: 100%;
 }
 
 .content_wrap .tap li:hover .close {
@@ -453,7 +442,7 @@ footer p {
   nav_wrap {
     width: 50px;
   }
-  nav.toggle_menu {
+  .toggle_menu {
     display: none;
   }
 
